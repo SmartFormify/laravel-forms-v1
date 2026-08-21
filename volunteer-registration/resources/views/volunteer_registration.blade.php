@@ -8,7 +8,7 @@
 
     <link
         rel="stylesheet"
-        href="{{ asset('css/volunteer_registration.css') }}"
+        href="{{ asset('css/style.css') }}"
     >
 </head>
 

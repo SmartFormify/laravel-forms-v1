@@ -8,7 +8,7 @@
 
     <link
         rel="stylesheet"
-        href="{{ asset('css/multi_step_form.css') }}"
+        href="{{ asset('css/style.css') }}"
     >
 </head>
 

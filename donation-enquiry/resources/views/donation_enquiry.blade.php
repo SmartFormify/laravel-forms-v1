@@ -6,110 +6,100 @@
 
     <title>Donation Enquiry</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-        }
-
-        h1 {
-            margin-bottom: 25px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 6px;
-        }
-
-        input,
-        select,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-        }
-
-        textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-
-        button {
-            padding: 10px 24px;
-            cursor: pointer;
-        }
-    </style>
+    <link
+        rel="stylesheet"
+        href="{{ asset('css/donation_enquiry.css') }}"
+    >
 </head>
 
 <body>
 
-    <h1>Donation Enquiry</h1>
+    <main class="form-container">
 
-    <form
-        action="https://api.smartformify.com/YOUR_FORM_ENDPOINT"
-        method="POST"
-    >
+        <h1>Donation Enquiry</h1>
 
-        <label for="name">Name</label>
-        <input
-            type="text"
-            id="name"
-            name="name"
-            required
+        <form
+            action="https://api.smartformify.com/YOUR_FORM_ENDPOINT"
+            method="POST"
         >
 
-        <label for="email">Email</label>
-        <input
-            type="email"
-            id="email"
-            name="email"
-            required
-        >
+            <div class="form-group">
+                <label for="name">Name</label>
 
-        <label for="phone">Phone</label>
-        <input
-            type="tel"
-            id="phone"
-            name="phone"
-        >
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                >
+            </div>
 
-        <label for="donation_type">Donation Type</label>
-        <select
-            id="donation_type"
-            name="donation_type"
-            required
-        >
-            <option value="">Select donation type</option>
-            <option value="one_time">One-time Donation</option>
-            <option value="monthly">Monthly Donation</option>
-            <option value="in_kind">In-kind Donation</option>
-            <option value="other">Other</option>
-        </select>
+            <div class="form-group">
+                <label for="email">Email</label>
 
-        <label for="amount">Donation Amount</label>
-        <input
-            type="number"
-            id="amount"
-            name="amount"
-            min="0"
-            step="0.01"
-        >
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+            </div>
 
-        <label for="message">Enquiry / Message</label>
-        <textarea
-            id="message"
-            name="message"
-            required
-        ></textarea>
+            <div class="form-group">
+                <label for="phone">Phone</label>
 
-        <button type="submit">
-            Submit Enquiry
-        </button>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                >
+            </div>
 
-    </form>
+            <div class="form-group">
+                <label for="donation_type">Donation Type</label>
+
+                <select
+                    id="donation_type"
+                    name="donation_type"
+                    required
+                >
+                    <option value="">Select donation type</option>
+                    <option value="one_time">One-time Donation</option>
+                    <option value="monthly">Monthly Donation</option>
+                    <option value="in_kind">In-kind Donation</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Donation Amount</label>
+
+                <input
+                    type="number"
+                    id="amount"
+                    name="amount"
+                    min="0"
+                    step="0.01"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="message">Enquiry / Message</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit">
+                Submit Enquiry
+            </button>
+
+        </form>
+
+    </main>
 
 </body>
 </html>
