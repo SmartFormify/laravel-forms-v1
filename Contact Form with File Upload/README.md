@@ -5,12 +5,17 @@ A simple Laravel contact form built with a Blade template and a web route. The f
 ## Files
 
 ```text
-resources/
-└── views/
-    └── contact_form_with_file_upload.blade.php
-
-routes/
-└── web.php
+contact-form-with-file-upload/
+├── resources/
+│   └── views/
+│       └── contact_form_with_file_upload.blade.php
+│
+├── public/
+│   └── css/
+│       └── style.css
+│
+└── routes/
+    └── web.php
 ```
 
 ### `contact_form_with_file_upload.blade.php`
