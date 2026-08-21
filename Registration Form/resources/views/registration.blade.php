@@ -6,7 +6,7 @@
 
     <title>Create Account</title>
 
-    <link rel="stylesheet" href="{{ asset('css/registration.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
 <body>

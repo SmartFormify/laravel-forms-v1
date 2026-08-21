@@ -6,7 +6,7 @@
 
     <title>Job Application</title>
 
-    <link rel="stylesheet" href="{{ asset('css/job_application.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
 <body>

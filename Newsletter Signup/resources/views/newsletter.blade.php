@@ -6,7 +6,7 @@
 
     <title>Newsletter Signup</title>
 
-    <link rel="stylesheet" href="{{ asset('css/newsletter.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
 <body>
